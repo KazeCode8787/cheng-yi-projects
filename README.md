@@ -1,6 +1,6 @@
 # cheng-yi-projects
 
-## 0902-1.py
+## [0902-1.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/0902-1.py)
 ### Topic: print()
 呼叫 print() 來顯示資料
 * ()內可輸入各種資料型態，如：
