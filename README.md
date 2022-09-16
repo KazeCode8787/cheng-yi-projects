@@ -18,3 +18,5 @@
 	* 不同
 		* 字串,數字 `print("a",2+3,3)` 結果："a 5 3"
 		
+## [0916.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/0916.py)
+### Topic: data type
