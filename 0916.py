@@ -37,4 +37,16 @@ print(-128>>3)
 print(2<<10)
 print(2&10)
 print(2|10)
+score1 = eval(input("國文分數："))
+score2 = eval(input("英文分數："))
+score3 = eval(input("數學分數："))
 
+total = score1 + score2 + score3
+print("總成績為：",total)
+
+top = eval(input("上底："))
+btn = eval(input("下底："))
+hig = eval(input("高："))
+
+area = (top+btn)*hig/2
+print("面積為：",area)
