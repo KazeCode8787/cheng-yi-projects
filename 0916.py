@@ -50,3 +50,11 @@ hig = eval(input("高："))
 
 area = (top+btn)*hig/2
 print("面積為：",area)
+
+x1,y1 = eval(input("第一個點"))
+x2,y2 = eval(input("第二個點"))
+
+dis = ((x2-x1)**2+(y2-y1)**2)**0.5
+print("兩點距離",dis)
+print((-5+(5**2-4*2*2)**0.5)/(2*2))
+print((100**2-50**2)/(100+50))
