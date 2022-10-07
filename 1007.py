@@ -16,3 +16,10 @@ print('or' in 'forever')
 print('over' in "forever")
 print('or' not in 'forever')
 print('over' not in "forever")
+
+s = "Python 程式設計"
+print(s[2:5])
+print(s[3:7])
+print(s[6:-1])
+print(s[:2])
+print(s[2:])
