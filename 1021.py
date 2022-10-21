@@ -1,3 +1,4 @@
+import keyword as ky
 s1 = "HappyNewYear"
 s2 = "happynewyear"
 s3 = "new"
@@ -24,3 +25,19 @@ print(str.isalnum("123.55"))
 print(str.isalnum("asds56sd"))
 print(str.isupper("Hashdj"))
 print(str.isupper("HASDLJK"))
+print(str.islower("Hksdjks"))
+print(str.islower("skdjskdj"))
+print(str.isidentifier("1jkkjd"))
+print(str.isidentifier("jkkjd"))
+print(str.isidentifier('class'))
+print(str.isspace("  "))
+print(ky.iskeyword("None"))
+print(str.istitle("Jks Jkasjd"))
+x = "WowWowWowWowWow"
+print(x.count('Wow'))
+print(x.startswith("Wow"))
+print(x.startswith("Ha"))
+print(x.endswith("Wow"))
+print(x.endswith("ha"))
+print(x.find("Wow"))
+print(x.rfind("Wow"))
