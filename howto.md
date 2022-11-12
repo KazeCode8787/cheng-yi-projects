@@ -44,9 +44,9 @@ A：
 完成上述操作後，將下列程式碼添加到您的程式中：
 ```
 from check import check #import這個模塊
-check(fileEndingName).randoms(min,max,.....) #這是用於創建隨機檢查點。如果你願意，你可以刪除它
+check(fileEndingName).randoms(min,max,.....) #這是用於創建隨機測資。如果你不想要這個，你可以刪除它
 a = check(fileEndingName).read()
-定義輸入（）-> str：
-    返回下一個（一）
+def input() -> str:
+    return next(a)
 ```
 然後你可以像以前一樣使用`input()`函數，但你不需要自己輸入值！
