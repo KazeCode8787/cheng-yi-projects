@@ -17,7 +17,7 @@ Inside txt file, enter your input value.
 After doing those above, add this to your program:
 ```
 from check import check     #import this module
-check(fileEndingName).randoms(min,max,.....)    #delete it if you want to
+check(fileEndingName).randoms(min,max,.....)    #This is for creating random check points. You can delete it if you want to
 a = check(fileEndingName).read()  
 def input() -> str:
     return next(a)
