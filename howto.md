@@ -11,7 +11,7 @@ First of all, create files like this:
         * -checkpoint1.txt
 
 You can rename anything but checkpoints(dir) and check.py
-(checkpoint.txt has to be `checkpoint`+`fileEndingName`+`.txt`)
+(checkpoint.txt has to be `checkpoint`+`fileEndingName`+`.txt`)<br>
 Inside txt file, enter your input value.
 
 After doing those above, add this to your program:
