@@ -23,3 +23,30 @@ def input() -> str:
     return next(a)
 ```
 Then you can use `input()` function like before but you dont need to enter value by yourself!
+
+
+# 如何使用這個插件？
+A：
+首先，依照這個格式創建檔案：
+
+* 文件夾-
+    * -文件夾2
+        * -something.py
+        * -check.py
+        * ...
+    * - checkpoints
+        * -checkpoint1.txt
+
+您可以重命名除了 checkpoints(dir) 和 check.py 之外的任何檔案
+（checkpoint.txt 必須是 `checkpoint`+`fileEndingName`+`.txt`）<br>
+接著在txt文件裡面輸入您的預設輸入值(測資)。
+
+完成上述操作後，將下列程式碼添加到您的程式中：
+```
+from check import check #import這個模塊
+check(fileEndingName).randoms(min,max,.....) #這是用於創建隨機檢查點。如果你願意，你可以刪除它
+a = check(fileEndingName).read()
+定義輸入（）-> str：
+    返回下一個（一）
+```
+然後你可以像以前一樣使用`input()`函數，但你不需要自己輸入值！
