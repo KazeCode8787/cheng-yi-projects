@@ -34,7 +34,7 @@ A：
         * -something.py
         * -check.py
         * ...
-    * - checkpoints
+    * -checkpoints
         * -checkpoint1.txt
 
 您可以重命名除了 checkpoints(dir) 和 check.py 之外的任何檔案

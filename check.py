@@ -12,8 +12,6 @@ class check:
             for i in file.readlines():
                 yield i.replace('\n','')
 
-    
-
     def randoms(self,min:int,max:int,amount:int,*,sep:str=' ',prefix:str='') -> None:
         ret = prefix
         for _ in range(amount):
