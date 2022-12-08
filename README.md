@@ -128,6 +128,43 @@
 * 括號內填入提示文字
 * 回傳必為字串型態
 
+## [0923.py&0930.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/0923.py)
+[0930.py連結](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/0930.py)
+### Topic: math(數學類別)/random(亂數類別)
+#### Python 內建數學函式
+python 中內建的數學函式有很多，無法一一列舉，這邊只講幾個
+* max(),min()
+	* 回傳最大/小值
+	* 括號內可傳入list,tuple等可迭代資料
+* abs()
+	* 回傳絕對值
+	* 括號內只可傳入數值型態
+* hex(),bin(),oct()
+	* 回傳16,2,8進位
+	* 括號內填入一整數型態
+#### math 類別
+math是python中內建的一個class(類別)，使用時需要import(引用)
+* import module as module_name
+	* 前面的module是類別名稱，例如`import math`
+	* as後方的module_name是未來想要呼叫時的名稱，會較為方便，例如`import math as ma`
+math類別中有許多函式，適合用於進階運算，此處不一一列舉，有興趣可參考[這個網站](https://www.w3schools.com/python/module_math.asp)
+### Topic: unicode/ascii code
+#### unicode/ascii code
+為一種特殊編碼模式，可以叫出特殊字元，常在辨識是否為英文字母或數字使用到
+使用方式；
+* 八進位模式
+	* `"\101"`為A
+* 十六進位模式
+	* `"\x41"`為ascii code的A
+	* `"\u0041"`為unicode的A
+* 名稱搜尋模式
+	* `"\N{BLACK SPADE SUIT}"`可搜尋unicode中的BLACK SPADE SUIT
+
+## [1007.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/0916.py)
+### Topic: data type(資料型態)
+#### 主要資料型態
+
+
 [^1]: 比較兩者是否皆為True
 
 	  | AND | T | F |

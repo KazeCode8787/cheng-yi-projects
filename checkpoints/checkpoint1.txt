@@ -1,6 +1,4 @@
-5
-160 180                               
-150 200
-280 300
-300 330
-190 210
+[["John","johnsmith@mail.com","john00@mail.com"],["John","johnnybravo@mail.com"],["John","johnsmith@mail.com","john_newyork@mail.com"],["Mary","mary@mail.com"]]
+John
+Mary
+no
