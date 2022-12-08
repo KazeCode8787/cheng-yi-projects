@@ -56,6 +56,3 @@ class thirtySix:
         __final.append(__v)
         
         return "0t"+"".join(map(str,__final[::-1]))
-
-a = thirtySix('606668363531288577')
-print(a.toTS())

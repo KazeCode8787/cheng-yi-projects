@@ -160,9 +160,96 @@ math類別中有許多函式，適合用於進階運算，此處不一一列舉�
 * 名稱搜尋模式
 	* `"\N{BLACK SPADE SUIT}"`可搜尋unicode中的BLACK SPADE SUIT
 
-## [1007.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/0916.py)
-### Topic: data type(資料型態)
-#### 主要資料型態
+## [1007.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1007.py)
+### Topic: String(字串型態)
+可將String想成是一個儲存字元的陣列
+每一個index都只對應到一個字元
+並且可使用list大多數的方法或函式
+也就是說，String算是一個iterable(可迭代資料)
+
+## [1021.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1021.py)
+### Topic: String methods(字串方法)
+太多了不想講自己看[API](https://www.w3schools.com/python/python_strings_methods.asp)
+
+## [1028.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1028.py)
+### Topic: f-String(格式化字串型態)
+格式化字串主要有兩種方式
+* `"Some String, arg1:{}, arg2:{}".format(arg1,arg2,...)`
+	* 此方法需在前方字串預先放入大括弧，為填入的值預留空位
+* `f"Some String, arg1:{arg1}, arg2:{arg2}"`
+	* 此方法需在字串的引號前加入`f`，並在大括弧內直接填入變數
+
+格式化字串可以排版，只需在大括號內填入`{:^10}`等即可
+`^`,`<`,`>` 分別為置中、向左靠、向右靠
+後方的數值為預留的空位
+需要注意的是，`"".format()`是輸入如`{:^10}`
+而`f""`是輸入`{arg:^10}`，冒號要在數值後方
+格式化還可以有其他變化，這邊就不多提及
+
+## [1111.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1111.py)
+### Topic: if statment
+if 可判斷其後方的狀態是否為真(True)，若成立則執行if下方的動作，反之執行else
+例如：
+```
+if 1<2:
+    print("Yes")
+else:
+    print('no')
+```
+則此程式必輸出`Yes`
+
+因為python沒有提供switch
+所以要大量判斷時只能使用elif
+elif 是else + if
+如果前一個if沒有成立，程式將會自動跳到else
+若else後方有if，程式會再度判斷是否成立
+例如：
+```
+if 5<2:
+    print('1')
+elif 5<6:
+    print('2')
+else:
+    print('3')
+```
+則此程式輸出`2`
+
+#### 特殊狀況
+在沒有給予其他條件時，if視以下狀況為`False`
+> 1. None
+> 2. 0 (int)
+> 3. False
+
+例如：
+```
+if 0:
+    print("hi")
+else:
+    print("no")
+```
+則此程式必輸出`no`
+
+#### 單行判斷式
+此部分可學可不學
+不學不影響程式速度
+學了看起來更帥
+舉例：
+```
+if 10>7:
+    a = 5
+else:
+    a = 3
+```
+此程式也可以這樣寫：
+`a = 5 if 10>7 else 3`
+而巢狀判斷也可以用一行來做
+舉[1111.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1111.py)的第17行為例
+可以改成
+`print("優等" if score >= 90 else "甲等" if score < 90 and score >= 80 else "乙等" if score < 80 and score >= 70 else "丙等" if score < 70 and score >= 80 else "不及格")`
+很長，也很難讀，但這種用法在`lambda`可能會用到
+
+### Topic: for loop
+尚未更新...
 
 
 [^1]: 比較兩者是否皆為True
