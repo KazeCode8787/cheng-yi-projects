@@ -31,4 +31,4 @@ while True:
 string = ""
 for i in temp:
     string += f"{i}({temp[i]})*"
-print(string)
+print(string[:-1])
