@@ -199,5 +199,3 @@ class analyze:
                 others += int(data[i][-1])
                 oc += 1
         return (capitals/cc,others/oc)
-
-    
