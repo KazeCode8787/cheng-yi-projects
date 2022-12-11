@@ -285,9 +285,9 @@ for迴圈與 while迴圈是各個程式語言中最重要的迴圈技巧
 
 看完火星文，來看看人話
 
-首先，上面所說的`assignment_expression`即為**判斷式**
-該判斷式需回傳True或False
-而當判斷式為True時，執行迴圈
+首先，上面所說的`assignment_expression`即為**判斷式**<br>
+該判斷式需回傳True或False<br>
+而當判斷式為True時，執行迴圈<br>
 也就是說，`while True`可達成無限循環，而`while False`無意義
 而while與if的判斷雷同
 
