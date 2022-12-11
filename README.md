@@ -144,11 +144,13 @@ python 中內建的數學函式有很多，無法一一列舉，這邊只講幾�
 * hex(),bin(),oct()
 	* 回傳16,2,8進位
 	* 括號內填入一整數型態
+	
 #### math 類別
 math是python中內建的一個class(類別)，使用時需要import(引用)
 * import module as module_name
 	* 前面的module是類別名稱，例如`import math`
 	* as後方的module_name是未來想要呼叫時的名稱，會較為方便，例如`import math as ma`
+
 math類別中有許多函式，適合用於進階運算，此處不一一列舉，有興趣可參考[這個網站](https://www.w3schools.com/python/module_math.asp)
 ### Topic: unicode/ascii code
 #### unicode/ascii code
@@ -164,9 +166,9 @@ math類別中有許多函式，適合用於進階運算，此處不一一列舉�
 
 ## [1007.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1007.py)
 ### Topic: String(字串型態)
-可將String想成是一個儲存字元的陣列
-每一個index都只對應到一個字元
-並且可使用list大多數的方法或函式
+可將String想成是一個儲存字元的陣列<br>
+每一個index都只對應到一個字元<br>
+並且可使用list大多數的方法或函式<br>
 也就是說，String算是一個iterable(可迭代資料)
 
 ## [1021.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1021.py)
