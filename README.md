@@ -221,6 +221,7 @@ else:
 > 1. None
 > 2. 0 (int)
 > 3. False
+> 4. 空的資料，如`""(空字串)`,`[](空串列)`
 
 例如：
 ```
@@ -243,10 +244,9 @@ else:
     a = 3
 ```
 此程式也可以這樣寫：
-`a = 5 if 10>7 else 3`
-而巢狀判斷也可以用一行來做
+`a = 5 if 10>7 else 3`<br>而巢狀判斷也可以用一行來做
 舉[1111.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1111.py)的第17行為例
-可以改成
+可以改成<br>
 `print("優等" if score >= 90 else "甲等" if score < 90 and score >= 80 else "乙等" if score < 80 and score >= 70 else "丙等" if score < 70 and score >= 80 else "不及格")`
 很長，也很難讀，但這種用法在`lambda`可能會用到
 
@@ -259,7 +259,7 @@ for迴圈與 while迴圈是各個程式語言中最重要的迴圈技巧
 
 #### for 迴圈
 * 用法(python官方提供)
-> "for" target_list "in" starred_list ":" suite
+> "for" target_list "in" starred_list ":" suite 
 
 看完火星文，來看看人話
 首先，上面所說的`starred_list`即為**可迭代資料**
