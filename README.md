@@ -282,6 +282,7 @@ for迴圈與 while迴圈是各個程式語言中最重要的迴圈技巧
 #### while 迴圈
 * 用法(python官方提供)
 > "while" assignment_expression ":" suite
+
 看完火星文，來看看人話
 
 首先，上面所說的`assignment_expression`即為**判斷式**
