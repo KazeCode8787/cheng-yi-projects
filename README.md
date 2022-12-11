@@ -250,8 +250,58 @@ else:
 `print("優等" if score >= 90 else "甲等" if score < 90 and score >= 80 else "乙等" if score < 80 and score >= 70 else "丙等" if score < 70 and score >= 80 else "不及格")`
 很長，也很難讀，但這種用法在`lambda`可能會用到
 
-### Topic: for loop
-尚未更新...
+### Topic: for/while loop
+for迴圈與 while迴圈是各個程式語言中最重要的迴圈技巧
+使用時機簡單來說，**明確知道**要跑幾次，使用for；反之使用while
+例如：
+> 明確知道要跑5次，使用for i in range(5)
+> 知道要跑到`i>j`但不知道要跑幾次，使用while i<=j
+
+#### for 迴圈
+* 用法(python官方提供)
+> "for" target_list "in" starred_list ":" suite
+
+看完火星文，來看看人話
+首先，上面所說的`starred_list`即為**可迭代資料**
+說簡單點就是list, tuple, set, dict等
+當然還有其他的可以拿來迭代，這邊就不提
+主要會常用到的有兩種方法
+`in range()`或`in list`
+* for i in range(start,end,step)
+	* range()會產生一個可迭代資料
+	* start是起始值(預設為0), end為結束值(但不包含end本身), step是每次迴圈需改變多少(預設為1)
+	* 例如：`range(5)` -> `0,1,2,3,4`;`range(1,5)` -> `1,2,3,4`;`range(0,5,2)` -> `0,2,4`
+* for i in list
+	* 可直接讀出list中的資料
+	* list可以是tuple, set, dict等
+	* 此時i會是list,tuple,set的值,或是dict的key
+
+同時，for迴圈可加入else
+只要for迴圈沒有被主動break掉，便會自動進入else
+
+#### while 迴圈
+* 用法(python官方提供)
+> "while" assignment_expression ":" suite
+看完火星文，來看看人話
+
+首先，上面所說的`assignment_expression`即為**判斷式**
+該判斷式需回傳True或False
+而當判斷式為True時，執行迴圈
+也就是說，`while True`可達成無限循環，而`while False`無意義
+而while與if的判斷雷同
+
+同時，while迴圈可加入else
+只要while迴圈沒有被主動break掉，便會自動進入else
+
+#### 小技巧
+執行迴圈時，有兩個可使用的關鍵字
+`break`以及`continue`
+* break
+	* break會直接打掉迴圈，使迴圈立即結束
+* continue
+	* continue會結束本次迴圈的執行，並進入下一次的迴圈
+兩者最大的差異就是continue還是保留在迴圈內
+而break會直接退出迴圈
 
 
 [^1]: 比較兩者是否皆為True
