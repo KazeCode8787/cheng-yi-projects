@@ -252,6 +252,7 @@ else:
 `print("優等" if score >= 90 else "甲等" if score < 90 and score >= 80 else "乙等" if score < 80 and score >= 70 else "丙等" if score < 70 and score >= 80 else "不及格")`
 很長，也很難讀，但這種用法在`lambda`可能會用到
 
+## [1202.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1202.py)
 ### Topic: for/while loop
 for迴圈與 while迴圈是各個程式語言中最重要的迴圈技巧
 使用時機簡單來說，**明確知道**要跑幾次，使用for；反之使用while
@@ -307,6 +308,100 @@ for迴圈與 while迴圈是各個程式語言中最重要的迴圈技巧
 兩者最大的差異就是continue還是保留在迴圈內
 而break會直接退出迴圈
 
+## [1209.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1209.py)
+### Topic: def 自訂函式
+
+def關鍵字可以用來自定義函式(function)
+自訂函式的優缺點如下
+* 優點
+	* 可以快速呼叫需重複執行的指令
+	* 維護時較為快速，只需修改定義的地方，不需全部更改
+* 缺點
+	* 執行時間較長
+	* 易有區域及全域變數混淆之情形
+
+#### 用法
+```
+def plus():
+	print("1+1=",2)
+
+plus()
+plus()
+```
+
+上述程式會輸出兩次`2`<br>
+但這個程式目前是比較沒用的，畢竟它裡面只做一件事情而已<br>
+所以我們可以把它改成這樣<br>
+
+```
+def plus():
+	num = int(input("Please enter your number:"))
+	print(num+num)
+
+plus()
+plus()
+```
+
+上述程式可以執行兩次的詢問數值及印出結果<br>
+但如果我不想要讓使用者輸入，而是直接傳入不一樣的數值就要用到變數<br>
+
+```
+def plus(num):
+	print(num+num)
+
+plus(5)
+plus(4)
+plus()
+```
+
+上述程式可以輸出`10`以及`8`<br>
+而最後那一行則會報錯，原因很簡單，就只是預設要輸入一個變數，但你只輸入了一個<br>
+解決的方法很簡單，只需要先幫num**訂好預設值**就可以了<br>
+```
+def plus(num=0):
+	print(num+num)
+
+plus(5)
+plus(4)
+plus()
+```
+上述程式可以輸出`10`以及`8`還有`0`<br>
+但如果我想要讓兩個**不同的數值**相加，就要必須用到兩個變數<br>
+
+```
+def plus(num1,num2):
+	print(num1+num2)
+
+plus(5,1)
+plus(4,3)
+plus(2,3,4)
+```
+
+上述程式可以輸出`6`以及`7`<br>
+而最後那一行則會報錯，原因很簡單，就只是預設只能輸入兩個變數，但你卻輸入了三個
+解決方式也很簡單，只要更改一夏，加一個符號即可<br>
+
+```
+def plus(*nums):
+	print(nums)
+
+plus(5,1)
+plus(4,3)
+plus(2,3,4)
+```
+這時候你會發現，他印出了`6`,`7`,`9`**才怪**<br>
+原因是，使用*符號的變數會以`tuple`的型態儲存<br>
+所以他會印出`(5,1)`,`(4,3)`,`(2,3,4)`等資料
+所以我們要改一下內部指令
+```
+def plus(*nums):
+	print(sum(nums))
+
+plus(5,1)
+plus(4,3)
+plus(2,3,4)
+```
+這樣就可以了
 
 [^1]: 比較兩者是否皆為True
 
