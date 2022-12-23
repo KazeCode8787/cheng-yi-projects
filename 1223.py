@@ -44,3 +44,17 @@ C = int(input("年數"))
 
 
 print(Sum(a,b,C))
+
+ra1, ra2 = map(int,input().split())
+check = False
+for i in range(ra1,ra2):
+    j = str(i)
+    length = len(j)
+    ctn = 0
+    for k in j:
+        ctn += int(k)**length
+    if ctn == i:
+        print(i)
+        check = True
+if not check:
+    print('none')
