@@ -25,21 +25,22 @@ for i in range(secs,0,-1):
 print("時間到！")
 
 def isPrime(num):
-    num1 = int(pow(num,0.5))
-    for i in range(num1,num):
+    for i in range(2,num):
         if num%i==0:
             return False
     else:
         return True
 
-print(isPrime(int(input("輸入一個數"))))
+for i in range(2,101):
+    if isPrime(i):
+        print(i)
 
 # def Sum(P,r,t):
 #     return P*(1+r*t)
 
 Sum = lambda P,r,t:P*(1+r*t)
 a = int(input("本金"))
-b = int(input("年利率"))
+b = float(input("年利率"))
 C = int(input("年數"))
 
 
@@ -54,7 +55,7 @@ for i in range(ra1,ra2):
     for k in j:
         ctn += int(k)**length
     if ctn == i:
-        print(i)
+        print(i,end=" ")
         check = True
 if not check:
     print('none')
