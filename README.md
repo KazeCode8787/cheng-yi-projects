@@ -83,7 +83,9 @@
 
 ##### 重點整理
 把這些資料想像成一本字典 *(並非上方dict)*，`list,tuple`為頁碼查詢，而資料排序**毫無規則**；`set`為筆畫查詢，越後面**筆畫越多**；`dict`為字音查詢，**只會查詢到一樣物品**
+
 ---
+
 ### Topic: Operators(運算子)
 對於一筆以上的資料進行運算的符號
 * **加減乘除(五則運算)**
@@ -120,6 +122,7 @@
 	 8>>2 | 8|1000|10|2
 
 ---
+
 ### Topic: eval()
 將傳入的值轉為運算式
 * `eval(3+5)` 輸出**錯誤**
@@ -156,7 +159,9 @@ math是python中內建的一個class(類別)，使用時需要import(引用)
 	* as後方的module_name是未來想要呼叫時的名稱，會較為方便，例如`import math as ma`
 
 math類別中有許多函式，適合用於進階運算，此處不一一列舉，有興趣可參考[這個網站](https://www.w3schools.com/python/module_math.asp)
+
 ---
+
 ### Topic: unicode/ascii code
 #### unicode/ascii code
 為一種特殊編碼模式，可以叫出特殊字元，常在辨識是否為英文字母或數字使用到
@@ -176,11 +181,15 @@ math類別中有許多函式，適合用於進階運算，此處不一一列舉�
 每一個index都只對應到一個字元<br>
 並且可使用list大多數的方法或函式<br>
 也就是說，String算是一個iterable(可迭代資料)
+
 ---
+
 ## [1021.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1021.py)
 ### Topic: String methods(字串方法)
 太多了不想講自己看[API](https://www.w3schools.com/python/python_strings_methods.asp)
+
 ---
+
 ## [1028.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1028.py)
 ### Topic: f-String(格式化字串型態)
 格式化字串主要有兩種方式
@@ -195,7 +204,9 @@ math類別中有許多函式，適合用於進階運算，此處不一一列舉�
 需要注意的是，`"".format()`是輸入如`{:^10}`<br>
 而`f""`是輸入`{arg:^10}`，冒號要在數值後方<br>
 格式化還可以有其他變化，這邊就不多提及<br>
+
 ---
+
 ## [1111.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1111.py)
 ### Topic: if statment
 if 可判斷其後方的狀態是否為真(True)，若成立則執行if下方的動作，反之執行else
@@ -257,7 +268,9 @@ else:
 可以改成<br>
 `print("優等" if score >= 90 else "甲等" if score < 90 and score >= 80 else "乙等" if score < 80 and score >= 70 else "丙等" if score < 70 and score >= 80 else "不及格")`
 很長，也很難讀，但這種用法在`lambda`可能會用到
+
 ---
+
 ## [1202.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1202.py)
 ### Topic: for/while loop
 for迴圈與 while迴圈是各個程式語言中最重要的迴圈技巧
@@ -313,7 +326,9 @@ for迴圈與 while迴圈是各個程式語言中最重要的迴圈技巧
 
 兩者最大的差異就是continue還是保留在迴圈內
 而break會直接退出迴圈
+
 ---
+
 ## [1209.py](https://github.com/KazeCode8787/cheng-yi-projects/blob/main/1209.py)
 ### Topic: def 自訂函式
 
