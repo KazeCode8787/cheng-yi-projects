@@ -85,7 +85,7 @@ def fibo(n):
     else:
         return fibo(n-1)+fibo(n-2)
 
-n = 16# 印出前16-1項
+n = 16
 for i in range(1,n):
     print(fibo(i),end="\t")
 
