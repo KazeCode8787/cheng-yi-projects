@@ -69,13 +69,12 @@ print(string[:-1])
 
 # 最大公因數
 def GCD(n,m):
-    assert m>n
     if m%n==0:
         return n
     else:
-        return GCD(n,m%n)
-
-print(GCD(5,100))
+        return GCD(m%n,n)
+        
+print(GCD(6,100))
 
 
 # 費氏數列
