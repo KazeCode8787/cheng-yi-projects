@@ -14,8 +14,8 @@ while bombs:
 
     if matrix[y][x] == 0:
         matrix[y][x] = 'x'
+        bombs -= 1
 
-    bombs -= 1
 
 directions = [(1,0),(1,-1),(0,-1),(-1,-1),(-1,0),(-1,1),(0,1),(1,1)]
 
