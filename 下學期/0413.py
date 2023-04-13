@@ -11,6 +11,7 @@ if os.path.isfile(path):
     f.close()
 else:
     print("file is not exist")
+    
 print(os.path.getsize(path))
 
 fileObject = open(path,'r')
