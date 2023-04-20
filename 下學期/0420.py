@@ -8,6 +8,5 @@ except Exception as e1:
     print(e1.args)
 else:
     print("沒有捕捉到例外!x除以Y的結果等於",z)
-
 finally:
     print("Leaving try...except scope.")
