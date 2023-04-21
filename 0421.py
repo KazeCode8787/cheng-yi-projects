@@ -2,7 +2,7 @@ class circle:
     PI = 3.14
     radius = 1
     def getArea(self):
-        return self.PI*self.radius*self.radius
+        return self.PI * self.radius * self.radius
 
 
 c1 = circle()
