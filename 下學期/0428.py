@@ -39,9 +39,11 @@ class shoppingcar():
 
     def addProduct(self,product):
         self.__product.append(product)
+        # return self
 
     def removeProduct(self,product):
         self.__product.remove(product)
+        # return self
 
     def getProduct(self):
         return self.__product
