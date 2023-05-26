@@ -7,4 +7,8 @@ class matrix:
         else:
             self.__data = [[0]*row for _ in range(col)]
 
-            
+    def __getitem__(self,index):
+        return self.__data[index]
+    
+    def addminus(self,target,act):
+        pass
