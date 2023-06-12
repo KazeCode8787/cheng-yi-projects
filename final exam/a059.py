@@ -1,3 +1,4 @@
+# 完全平方數
 T = int(input())
 
 for _ in range(T):

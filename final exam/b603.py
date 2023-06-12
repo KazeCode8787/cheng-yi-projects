@@ -1,3 +1,4 @@
+# 拋物線程式
 x1,y1,x2,y2 = map(int,input().split())
 
 # y2 = a(x2-x1)^2 + y1

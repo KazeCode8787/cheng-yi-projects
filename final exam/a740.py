@@ -1,3 +1,4 @@
+# 質因數之和
 try:
     while True:
         num = int(input())
